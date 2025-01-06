@@ -10,8 +10,8 @@ const page = () => {
     <>
       <HeroSection />
       <CardComponents />
-      <GameCard />
-      <CommunityCard />
+
+      {/* <CommunityCard /> */}
     </>
   );
 };
