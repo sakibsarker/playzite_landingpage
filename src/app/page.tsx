@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import CardComponents from "@/components/CardComponents";
-import CommunityCard from "@/components/CommunityCard";
-import GameCard from "@/components/GameCard";
+
 import HeroSection from "@/components/HeroSection";
+import PromoSlider from "@/components/PromoSlider";
 
 const page = () => {
   return (
     <>
       <HeroSection />
+      <PromoSlider />
       <CardComponents />
 
       {/* <CommunityCard /> */}

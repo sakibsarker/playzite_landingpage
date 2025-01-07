@@ -72,7 +72,7 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
+                className=" mt-5 bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
                 onClick={lp.showJoin}
               >
                 Crear Cuenta
@@ -109,7 +109,7 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
+                className="bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
                 onClick={lp.showJoin}
               >
                 Depositar
@@ -168,7 +168,7 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
+                className="bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
                 onClick={lp.showJoin}
               >
                 Crear Cuenta
@@ -203,7 +203,7 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
+                className="bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
                 onClick={lp.showJoin}
               >
                 Crear Cuenta
@@ -262,7 +262,7 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className="bg-gradient-to-br mt-5 from-[#4044ED] via-[#570bd8] to-[#570bd8] hover:from-[#4044ED]/90 hover:via-[#570bd8]/90 hover:to-[#570bd8]/80 text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
+                className="bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
                 onClick={lp.showJoin}
               >
                 Depositar
