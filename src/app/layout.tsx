@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Orbitron } from "next/font/google";
 import "./globals.css";
+import CursorTrail from "@/components/CursorTrail";
 
 const inter = Inter({
   weight: ["300", "400", "700"],
@@ -31,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bebasNeue.variable}>{children}</body>
+      <body className={bebasNeue.variable}>
+        <CursorTrail />
+        {children}
+      </body>
     </html>
   );
 }
