@@ -29,8 +29,8 @@ export default function CardComponents() {
     { icon: FaReddit, href: "#", label: "Reddit" },
   ];
   return (
-    <div className="bg-gradient-to-br from-black to-secondary p-6 md:p-12">
-      <div className="max-w-7xl mx-auto space-y-6 py-20">
+    <div className="">
+      <div className="w-screen px-32 mx-auto space-y-6 ">
         {/* Withdraw Section */}
         <motion.div
           className="relative border-2 border-white/20 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"
@@ -53,11 +53,12 @@ export default function CardComponents() {
             </div>
             <div className="space-y-6 max-w-xl">
               <div>
-                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
                   <h1 className="text-white font-inter tracking-wide font-medium uppercase">
                     bienvenido
                   </h1>
                 </div>
+
                 <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   TU NUEVA
                   <br />
@@ -92,11 +93,12 @@ export default function CardComponents() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div className="space-y-6 max-w-xl">
               <div>
-                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
                   <h1 className="text-white font-inter tracking-wide font-medium uppercase">
                     10% gratis
                   </h1>
                 </div>
+
                 <h2 className="text-5xl font-bebasNeue font-bold tracking-wider text-white my-5 uppercase">
                   DEPOSITA
                 </h2>
@@ -151,7 +153,7 @@ export default function CardComponents() {
             </div>
             <div className="space-y-6 max-w-xl">
               <div>
-                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
                   <h1 className="text-white font-inter tracking-wide font-medium uppercase">
                     retiros rápidos
                   </h1>
@@ -187,7 +189,7 @@ export default function CardComponents() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div className="space-y-6 max-w-xl">
               <div>
-                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
                   <h1 className="text-white font-inter tracking-wide font-medium uppercase">
                     seguridad
                   </h1>
@@ -244,7 +246,7 @@ export default function CardComponents() {
             </div>
             <div className="space-y-6 max-w-xl">
               <div>
-                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
+                <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
                   <h1 className="text-white font-inter tracking-wide font-medium uppercase">
                     10% GRATIS
                   </h1>
@@ -280,8 +282,8 @@ export default function CardComponents() {
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Right side - Content */}
             <div className="w-full lg:w-1/2 space-y-6">
-              <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-[#2f274f] to-[#2f274f] hover:from-[#3B3466] hover:to-[#2E2746] transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-[#4044ED] border-r-[#570bd8] border-b-[#570bd8]">
-                <h1 className="text-white font-inter tracking-wide font-medium">
+              <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
+                <h1 className="text-white font-inter tracking-wide font-medium uppercase">
                   NO TE LO PIERDAS
                 </h1>
               </div>
@@ -301,7 +303,7 @@ export default function CardComponents() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#2B2456] to-[#1E1736] hover:from-gray-500/30 hover:to-gray-700/40 transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-primary border-r-secondary border-b-secondary"
+                    className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#2B2456] to-[#1E1736] hover:from-gray-500/30 hover:to-gray-700/40 transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3),inset_0_0_6px_rgba(255,255,255,0.2)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5),inset_0_0_6px_rgba(255,255,255,0.3)] border-2 border-primary border-r-secondary border-b-secondary"
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5 text-gray-200" />

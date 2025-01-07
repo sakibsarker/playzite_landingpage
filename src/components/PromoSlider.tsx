@@ -25,13 +25,13 @@ const PromoSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-black to-secondary p-6">
-      <div className="relative mx-auto max-w-[1400px]">
-        <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+    <div className="py-10">
+      <div className="relative mx-auto w-screen px-32">
+        <div className="flex gap-4 overflow-x-auto scrollbar-hide">
           {promos.map((promo, index) => (
             <div
               key={index}
-              className="relative w-[calc(40vw-2rem)] min-w-[500px] overflow-hidden rounded-2xl"
+              className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-2xl"
             >
               {/* Background Image */}
               <div className="absolute inset-0">

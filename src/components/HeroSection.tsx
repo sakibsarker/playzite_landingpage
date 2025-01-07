@@ -83,8 +83,8 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className="overflow-hidden bg-[#0D0827] ">
-      <div className="relative flex flex-col items-center justify-center">
+    <div className="overflow-hidden bg-primary ">
+      <div className="relative flex flex-col items-start justify-start">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -97,8 +97,8 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-center py-24">
-          <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl bg-gradient-to-br from-gray-800 to-gray-600 hover:from-gray-500 hover:to-gray-700 transition-all duration-200 shadow-[0_0_15px_rgba(78,56,216,0.3)] hover:shadow-[0_0_20px_rgba(78,56,216,0.5)] border-2 border-primary border-r-primary border-b-primary">
+        <div className="relative z-10 text-start py-[15%] px-32">
+          <div className="inline-flex px-4 py-1 items-centr justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
             <h1 className="text-white font-inter tracking-wide font-medium uppercase">
               RD$200 gratis
             </h1>
