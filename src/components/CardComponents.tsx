@@ -29,8 +29,8 @@ export default function CardComponents() {
     { icon: FaReddit, href: "#", label: "Reddit" },
   ];
   return (
-    <div className="">
-      <div className="w-screen px-32 mx-auto space-y-6 ">
+    <div className=" p-6 md:p-12">
+      <div className="max-w-7xl mx-auto space-y-6 py-20">
         {/* Withdraw Section */}
         <motion.div
           className="relative border-2 border-white/20 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"

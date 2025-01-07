@@ -103,17 +103,65 @@ export default function HeroSection() {
               RD$200 gratis
             </h1>
           </div>
-          <h1 className="text-5xl sm:text-4xl font-bebasNeue md:text-8xl font-bold text-white tracking-wider gap-2 flex items-start justify-start text-start whitespace-nowrap">
-            REcibe RD$200
-            <br /> Gratis al crear <br />
-            tu cuenta*
+          <h1 className="text-5xl sm:text-4xl font-bebasNeue md:text-8xl font-bold text-white tracking-wider  items-start justify-start text-start ">
+            <motion.span
+              className=" block"
+              initial={{ y: "50%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              REcibe RD$200
+            </motion.span>
+            <motion.span
+              className=" block"
+              initial={{ y: "50%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+            >
+              Gratis al crear
+            </motion.span>{" "}
+            <motion.span
+              initial={{ y: "50%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ delay: 0.6, duration: 0.5, ease: "easeOut" }}
+            >
+              tu cuenta*
+            </motion.span>
           </h1>
 
           <p className="text-xl sm:text-lg md:text-xl tracking-wider font-inter text-start items-start justify-start text-gray-100">
-            Abre tu cuenta en Playzite y comienza a apostar con
-            <br /> RD$200 de regalo. Da el primer paso hacia tus mejores <br />
-            jugadas y vive la emoción de ganar con nosotros.
+            <motion.span
+              initial={{ y: "50%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              Abre tu cuenta en Playzite y comienza a apostar con
+            </motion.span>
+            <motion.span
+              className=" block"
+              initial={{ y: "50%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+            >
+              {" "}
+              RD$200 de regalo. Da el primer paso hacia tus mejores
+            </motion.span>{" "}
+            <motion.span
+              className=" block"
+              initial={{ y: "50%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+            >
+              jugadas y vive la emoción de ganar con nosotros.
+            </motion.span>
           </p>
+
           <button
             className="bg-gradient-to-br mt-5 bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
             onClick={lp.showJoin}
