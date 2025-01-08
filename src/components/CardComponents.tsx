@@ -1,14 +1,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLinepros } from "@/hooks/useLinepros";
-import {
-  FaXTwitter,
-  FaInstagram,
-  FaFacebookF,
-  FaDiscord,
-  FaTelegram,
-  FaReddit,
-} from "react-icons/fa6";
+import { FaXTwitter, FaTelegram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import { Jost, Inter } from "next/font/google";
 
 const jost = Jost({ subsets: ["latin"] });
@@ -27,9 +22,8 @@ export default function CardComponents() {
   };
   const socialLinks = [
     { icon: FaXTwitter, href: "#", label: "Twitter" },
-    { icon: FaInstagram, href: "#", label: "Instagram" },
-    { icon: FaFacebookF, href: "#", label: "Facebook" },
-
+    { icon: AiFillInstagram, href: "#", label: "Instagram" },
+    { icon: FaFacebook, href: "#", label: "Facebook" },
     { icon: FaTelegram, href: "#", label: "Telegram" },
   ];
   return (
