@@ -37,14 +37,14 @@ export default function CardComponents() {
       <div className="  space-y-20 ">
         {/* Withdraw Section */}
         <motion.div
-          className="relative border-2 border-white/10 rounded-3xl p-5 md:p-5 overflow-hidden backdrop-blur-sm"
+          className="relative border-2 border-white/10 rounded-[40px] p-5 md:p-10 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-            <div className="relative w-full h-full md:w-[45%] md:h-[45%] flex justify-center items-center ">
+          <div className="flex flex-col-reverse md:max-lg:flex-col-reverse lg:max-xl:flex-col-reverse md:flex-row justify-between items-center gap-8">
+            <div className="relative w-full h-full md:w-[45%] md:h-[45%] md:max-lg:w-[100%] lg:max-xl:w-[100%]  flex justify-center items-center ">
               <motion.img
                 src="/images/Group2085664289.png"
                 width={1800}
@@ -81,7 +81,7 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                 onClick={lp.showJoin}
               >
                 Crear Cuenta
@@ -92,13 +92,13 @@ export default function CardComponents() {
 
         {/* Deposit Section */}
         <motion.div
-          className="relative  border-2 border-white/10 rounded-3xl p-5 md:p-5 overflow-hidden backdrop-blur-sm"
+          className="relative  border-2 border-white/10 rounded-[40px] p-5 md:p-10 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="flex flex-col md:flex-row md:max-lg:flex-col lg:max-xl:flex-col justify-between items-start md:items-center gap-8">
             <div className="space-y-6 max-w-3xl px-5">
               <div>
                 <div className="inline-flex px-4 py-2 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
@@ -124,13 +124,13 @@ export default function CardComponents() {
               </div>
 
               <button
-                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                 onClick={lp.showJoin}
               >
                 Depositar
               </button>
             </div>
-            <div className="relative w-full h-full md:w-[45%] md:h-[45%] flex justify-center items-center ">
+            <div className="relative w-full h-full md:w-[45%] md:h-[45%] md:max-lg:w-[100%] lg:max-xl:w-[100%]  flex justify-center items-center ">
               <motion.img
                 src="/images/Group2085664286.png"
                 width={1800}
@@ -146,14 +146,14 @@ export default function CardComponents() {
 
         {/* Withdraw Section */}
         <motion.div
-          className="relative border-2 border-white/10 rounded-3xl p-5 md:p-5 overflow-hidden backdrop-blur-sm"
+          className="relative border-2 border-white/10 rounded-[40px] p-5 md:p-10 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-            <div className="relative w-full h-full md:w-[45%] md:h-[45%] flex justify-center items-center ">
+          <div className="flex flex-col-reverse md:flex-row md:max-lg:flex-col-reverse lg:max-xl:flex-col-reverse justify-between items-center gap-8">
+            <div className="relative w-full h-full md:w-[45%] md:h-[45%] md:max-lg:w-[100%] lg:max-xl:w-[100%]  flex justify-center items-center ">
               <motion.img
                 src="/images/Group2085664285.png"
                 width={1800}
@@ -188,7 +188,7 @@ export default function CardComponents() {
               </div>
 
               <button
-                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                 onClick={lp.showJoin}
               >
                 Crear Cuenta
@@ -198,13 +198,13 @@ export default function CardComponents() {
         </motion.div>
         {/* Deposit Section */}
         <motion.div
-          className="relative  border-2 border-white/10 rounded-3xl p-5 md:p-5 overflow-hidden backdrop-blur-sm"
+          className="relative  border-2 border-white/10 rounded-[40px] p-5 md:p-10 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="flex flex-col md:flex-row md:max-lg:flex-col lg:max-xl:flex-col justify-between items-start md:items-center gap-8">
             <div className="space-y-6 max-w-3xl px-5">
               <div>
                 <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
@@ -227,13 +227,13 @@ export default function CardComponents() {
                 </p>
               </div>
               <button
-                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                 onClick={lp.showJoin}
               >
                 Crear Cuenta
               </button>
             </div>
-            <div className="relative w-full h-full md:w-[45%] md:h-[45%] flex justify-center items-center ">
+            <div className="relative w-full h-full md:w-[45%] md:h-[45%] md:max-lg:w-[100%] lg:max-xl:w-[100%]  flex justify-center items-center ">
               <motion.img
                 src="/images/Group2085664287.png"
                 width={1800}
@@ -248,14 +248,14 @@ export default function CardComponents() {
         </motion.div>
         {/* Withdraw Section */}
         <motion.div
-          className="relative border-2 border-white/10 rounded-3xl p-5 md:p-5 overflow-hidden backdrop-blur-sm"
+          className="relative border-2 border-white/10 rounded-[40px] p-5 md:p-10 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-            <div className="relative w-full h-full md:w-[45%] md:h-[45%] flex justify-center items-center ">
+          <div className="flex flex-col-reverse md:flex-row md:max-lg:flex-col-reverse lg:max-xl:flex-col-reverse justify-between items-center gap-8">
+            <div className="relative w-full h-full md:w-[45%] md:h-[45%] md:max-lg:w-[100%] lg:max-xl:w-[100%]  flex justify-center items-center ">
               <motion.img
                 src="/images/Group2085664308.png"
                 width={1800}
@@ -291,7 +291,7 @@ export default function CardComponents() {
               </div>
 
               <button
-                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                 onClick={lp.showJoin}
               >
                 Depositar
@@ -300,13 +300,13 @@ export default function CardComponents() {
           </div>
         </motion.div>
         <motion.div
-          className="relative  border-2 border-white/10 rounded-3xl p-5 md:p-5 overflow-hidden backdrop-blur-sm"
+          className="relative  border-2 border-white/10 rounded-[40px] p-5 md:p-10 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <div className="flex flex-col lg:flex-row md:max-lg:flex-col lg:max-xl:flex-col gap-12 items-center">
             {/* Right side - Content */}
             <div className="space-y-6 max-w-3xl px-5">
               <div className="inline-flex px-4 py-1 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
@@ -342,7 +342,7 @@ export default function CardComponents() {
                 ))}
               </div>
             </div>
-            <div className="relative w-full h-full md:w-[50%] md:h-[50%] flex justify-center items-center ">
+            <div className="relative w-full h-full md:w-[50%] md:h-[50%] md:max-lg:w-[100%] lg:max-xl:w-[100%]  flex justify-center items-center ">
               <motion.img
                 src="/images/imgbox.png"
                 alt="HODL Community Member"

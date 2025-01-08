@@ -194,10 +194,10 @@ export default function HeroSection() {
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              REcibe RD$200
+              RECIBE RD$200
             </motion.span>
             <motion.span
-              className=" block"
+              className=" uppercase block"
               initial={{ y: "50%", opacity: 0 }}
               whileInView={{ y: "0%", opacity: 1 }}
               viewport={{ once: false, amount: 0.5 }}
@@ -206,6 +206,7 @@ export default function HeroSection() {
               Gratis al crear
             </motion.span>{" "}
             <motion.span
+              className="uppercase"
               initial={{ y: "50%", opacity: 0 }}
               whileInView={{ y: "0%", opacity: 1 }}
               viewport={{ once: false, amount: 0.5 }}
@@ -247,7 +248,7 @@ export default function HeroSection() {
             </motion.span>
           </p>
           <button
-            className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+            className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
             onClick={lp.showJoin}
           >
             {" "}
@@ -278,7 +279,7 @@ export default function HeroSection() {
                         {promo.title}
                       </h2>
                       <button
-                        className={` bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                        className={` bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                         onClick={lp.showJoin}
                       >
                         {promo.buttonText}
