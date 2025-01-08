@@ -210,7 +210,7 @@ export default function HeroSection() {
               initial={{ y: "50%", opacity: 0 }}
               whileInView={{ y: "0%", opacity: 1 }}
               viewport={{ once: false, amount: 0.5 }}
-              transition={{ delay: 0.6, duration: 0.5, ease: "easeOut" }}
+              transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }}
             >
               tu cuenta*
             </motion.span>
@@ -242,7 +242,7 @@ export default function HeroSection() {
               initial={{ y: "50%", opacity: 0 }}
               whileInView={{ y: "0%", opacity: 1 }}
               viewport={{ once: false, amount: 0.5 }}
-              transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+              transition={{ delay: 0.5, duration: 0.3, ease: "easeOut" }}
             >
               jugadas y vive la emoción de ganar con nosotros.
             </motion.span>
