@@ -10,27 +10,31 @@ const page = () => {
     <>
       <HeroSection />
 
-      <div className="w-full h-full bg-[#161b29] relative">
+      <div className="w-full h-full bg-blacktext relative">
+        <div className="w-full h-[250px] bg-gradient-to-t from-blacktext  to-[#21772B]" />
         {/* Single red glow on the top */}
-        <div className="flex justify-center items-center h-screen">
-          <div className="w-full h-full bg-gradient-to-b from-primary/50 to-[#161b29]" />
-        </div>
 
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-60" />
+          <div className="h-[800px] bg-gradient-to-t from-blacktext  to-[#22762b]" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-60" />
+          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-20" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-60" />
+          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-20" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-60" />
+          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] semi-circle bg-primary blur-[130px] opacity-20" />
+        </div>
+        <div className="flex justify-center items-center">
+          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[150px] " />
+        </div>
+        <div className="flex justify-center items-center">
+          <div className="md:w-[800px] md:h-[400px] w-[150px] h-[150px] bg-gradient-to-t from-primary  to-blacktext blur-[130px] opacity-40" />
         </div>
 
         <div className="absolute inset-0">
-          <PromoSlider />
+          {/* <PromoSlider /> */}
           <CardComponents />
         </div>
       </div>

@@ -1,22 +1,23 @@
 import React, { useEffect } from "react";
 import { useLinepros } from "@/hooks/useLinepros";
+import { motion } from "framer-motion";
 const PromoSlider: React.FC = () => {
   const { trackHeight, actions: lp } = useLinepros();
   const promos = [
     {
       title: "GANA RD$200\nTOTALMENTE GRATIS",
       buttonText: "Crear Cuenta",
-      image: "/placeholder.svg",
+      image: "/images/promo1.png",
     },
     {
       title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
       buttonText: "Deposita Ahora",
-      image: "/placeholder.svg",
+      image: "/images/promo2.png",
     },
     {
       title: "RETIRA TU DINERO\nCUANDO QUIERAS",
       buttonText: "Saber Más",
-      image: "/placeholder.svg",
+      image: "/images/promo3.png",
     },
   ];
 
@@ -26,18 +27,20 @@ const PromoSlider: React.FC = () => {
 
   return (
     <div className="py-10">
-      <div className="relative mx-auto w-screen px-32">
+      <div className="relative mx-auto w-full h-full px-32">
         <div className="flex gap-4 overflow-x-auto scrollbar-hide">
           {promos.map((promo, index) => (
-            <div
+            <motion.div
+              whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
+              transition={{ type: "spring", stiffness: 300 }}
               key={index}
-              className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-2xl"
+              className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
             >
               {/* Background Image */}
               <div className="absolute inset-0">
                 <img
                   src={promo.image}
-                  alt=""
+                  alt={promo.title}
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
@@ -57,7 +60,7 @@ const PromoSlider: React.FC = () => {
                   {promo.buttonText}
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

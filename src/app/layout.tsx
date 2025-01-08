@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue, Orbitron } from "next/font/google";
+import { Inter, Bebas_Neue, Orbitron, Figtree, Jost } from "next/font/google";
 import "./globals.css";
 import CursorTrail from "@/components/CursorTrail";
 
@@ -9,15 +9,14 @@ const inter = Inter({
   variable: "--inter",
 });
 
-const bebasNeue = Bebas_Neue({
-  weight: "400",
+const figtree = Figtree({
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
-  variable: "--bebasNeue",
 });
-const orbitron = Orbitron({
-  weight: "400",
+
+const jost = Jost({
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
-  variable: "--orbitron",
 });
 
 export const metadata: Metadata = {
@@ -32,8 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bebasNeue.variable}>
-        <CursorTrail />
+      <body className={` ${figtree.className} `}>
+        {/* <CursorTrail /> */}
         {children}
       </body>
     </html>

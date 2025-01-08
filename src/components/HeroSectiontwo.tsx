@@ -3,10 +3,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useLinepros } from "@/hooks/useLinepros";
 
-import { Jost, Inter } from "next/font/google";
-
-const jost = Jost({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
 export default function HeroSection() {
   const { trackHeight, actions: lp } = useLinepros();
   const [scrollDirection, setScrollDirection] = useState("up");
@@ -76,34 +72,21 @@ export default function HeroSection() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const promos = [
-    {
-      title: "GANA RD$200\nTOTALMENTE GRATIS",
-      buttonText: "Crear Cuenta",
-      image: "/images/promo1.png",
-    },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
+  const loopedImages = [
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
+    ...navImages,
   ];
 
-  useEffect(() => {
-    trackHeight();
-  }, []);
-
   return (
-    <div className="overflow-hidden  ">
-      <div className="relative flex flex-col items-start justify-start py-[10%]">
+    <div className="overflow-hidden bg-primary ">
+      <div className="relative flex flex-col items-start justify-start">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[#21772B]">
+        <div className="absolute inset-0">
           <Image
             src="/images/bannerimg.png"
             alt="Crypto Background"
@@ -111,20 +94,17 @@ export default function HeroSection() {
             width={1800}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0  bg-gradient-to-b from-gray-600/5 to-primary  opacity-60 " />
+          <div className="absolute inset-0  bg-gradient-to-b from-primary/50 to-[#161b29]" />
         </div>
 
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-start  px-5 md:px-32">
-          <div className="inline-flex px-4 py-2 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
-            <h1
-              className={`text-white tracking-wide font-medium uppercase ${inter.className}`}
-            >
+        <div className="relative z-10 text-start py-[15%] px-32">
+          <div className="inline-flex px-4 py-1 items-centr justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
+            <h1 className="text-white font-inter tracking-wide font-medium uppercase">
               RD$200 gratis
             </h1>
           </div>
-
-          <h1 className="text-7xl py-10 font-bold text-white  tracking-wider  items-start justify-start text-start ">
+          <h1 className="text-5xl sm:text-4xl font-bebasNeue md:text-8xl font-bold text-white tracking-wider  items-start justify-start text-start ">
             <motion.span
               className=" block"
               initial={{ y: "50%", opacity: 0 }}
@@ -153,9 +133,7 @@ export default function HeroSection() {
             </motion.span>
           </h1>
 
-          <p
-            className={`text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
-          >
+          <p className="text-xl sm:text-lg md:text-xl tracking-wider font-inter text-start items-start justify-start text-gray-100">
             <motion.span
               initial={{ y: "50%", opacity: 0 }}
               whileInView={{ y: "0%", opacity: 1 }}
@@ -184,49 +162,13 @@ export default function HeroSection() {
               jugadas y vive la emoción de ganar con nosotros.
             </motion.span>
           </p>
+
           <button
-            className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+            className="bg-gradient-to-br mt-5 bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
             onClick={lp.showJoin}
           >
-            {" "}
             Crear Cuenta
           </button>
-        </div>
-        {/* promo */}
-        <div className="flex gap-4 overflow-x-auto scrollbar-hide px-5 md:px-20">
-          {promos.map((promo, index) => (
-            <motion.div
-              whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
-              transition={{ type: "spring", stiffness: 300 }}
-              key={index}
-              className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
-            >
-              {/* Background Image */}
-              <div className="absolute inset-0">
-                <img
-                  src={promo.image}
-                  alt={promo.title}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/40" />
-              </div>
-
-              {/* Content */}
-              <div className="relative flex h-[240px] flex-col justify-between p-8">
-                <h2 className="text-4xl font-bold leading-tight text-white whitespace-pre-line">
-                  {promo.title}
-                </h2>
-                <button
-                  className=" w-fit mt-5 bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
-                  onClick={lp.showJoin}
-                >
-                  {promo.buttonText}
-                </button>
-              </div>
-            </motion.div>
-          ))}
         </div>
       </div>
     </div>

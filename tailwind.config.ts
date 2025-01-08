@@ -19,6 +19,9 @@ const config: Config = {
         bgcolor: "#000000",
         secondary: "#61d76f",
         textcolor: "#ffffff",
+        blacktext: "#000000",
+        thircolor: "#ccf626",
+        textgray: "#5b5b5b",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
