@@ -9,6 +9,7 @@ const page = () => {
   return (
     <>
       <HeroSection />
+      {/* <PromoSlider /> */}
 
       <div className="w-full h-full bg-blacktext relative">
         <div className="w-full h-[250px] bg-gradient-to-t from-blacktext  to-[#21772B]" />

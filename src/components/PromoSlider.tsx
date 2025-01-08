@@ -80,7 +80,7 @@ const PromoSlider: React.FC = () => {
               whileHover={{ scale: 1.1, rotate: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
               key={index}
-              className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
+              className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
             >
               <div className="absolute inset-0">
                 <img
@@ -91,7 +91,7 @@ const PromoSlider: React.FC = () => {
                 />
               </div>
               <div className="relative flex h-[240px] flex-col justify-between p-8">
-                <h2 className="text-4xl font-bold leading-tight text-white whitespace-pre-line">
+                <h2 className="text-xl md:text-4xl font-bold leading-tight text-white whitespace-pre-line">
                   {promo.title}
                 </h2>
                 <button

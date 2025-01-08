@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${figtree.className} `}>
-        {/* <CursorTrail /> */}
+        <CursorTrail />
         {children}
       </body>
     </html>
