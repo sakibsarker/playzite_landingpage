@@ -28,7 +28,7 @@ const page = () => {
           <div className="md:w-[800px] md:h-[800px] w-[200px] h-[800px] semi-circle bg-primary blur-[130px] opacity-20" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[1350px] " />
+          <div className="md:w-[800px] md:h-[1200px] w-[150px] h-[1350px] lg:w-[150px] lg:h-[800px]" />
         </div>
         <div className="flex justify-center items-center">
           <div className="md:w-[800px] md:h-[400px] w-[150px] h-[1300px] bg-gradient-to-t from-primary  to-blacktext blur-[130px] opacity-40" />
