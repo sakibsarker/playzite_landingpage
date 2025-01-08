@@ -93,6 +93,66 @@ export default function HeroSection() {
       buttonText: "Saber Más",
       image: "/images/promo3.png",
     },
+    {
+      title: "GANA RD$200\nTOTALMENTE GRATIS",
+      buttonText: "Crear Cuenta",
+      image: "/images/promo1.png",
+    },
+    {
+      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
+      buttonText: "Deposita Ahora",
+      image: "/images/promo2.png",
+    },
+    {
+      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
+      buttonText: "Saber Más",
+      image: "/images/promo3.png",
+    },
+    {
+      title: "GANA RD$200\nTOTALMENTE GRATIS",
+      buttonText: "Crear Cuenta",
+      image: "/images/promo1.png",
+    },
+    {
+      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
+      buttonText: "Deposita Ahora",
+      image: "/images/promo2.png",
+    },
+    {
+      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
+      buttonText: "Saber Más",
+      image: "/images/promo3.png",
+    },
+    {
+      title: "GANA RD$200\nTOTALMENTE GRATIS",
+      buttonText: "Crear Cuenta",
+      image: "/images/promo1.png",
+    },
+    {
+      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
+      buttonText: "Deposita Ahora",
+      image: "/images/promo2.png",
+    },
+    {
+      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
+      buttonText: "Saber Más",
+      image: "/images/promo3.png",
+    },
+    {
+      title: "GANA RD$200\nTOTALMENTE GRATIS",
+      buttonText: "Crear Cuenta",
+      image: "/images/promo1.png",
+    },
+    {
+      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
+      buttonText: "Deposita Ahora",
+      image: "/images/promo2.png",
+    },
+    {
+      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
+      buttonText: "Saber Más",
+      image: "/images/promo3.png",
+    },
   ];
 
   useEffect(() => {
@@ -101,7 +161,7 @@ export default function HeroSection() {
 
   return (
     <div className="overflow-hidden  ">
-      <div className="relative flex flex-col items-start justify-start">
+      <div className="relative flex flex-col items-start justify-start pb-14">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[#21772B]">
           <Image
@@ -115,7 +175,7 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-start  px-5 md:px-32 py-40">
+        <div className="relative z-10 text-start  px-5 md:px-32 py-10 md:py-40">
           <div>
             <div className="inline-flex px-4 py-2 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
               <h1
@@ -126,7 +186,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-7xl py-10 font-bold text-white  tracking-wider  items-start justify-start text-start ">
+          <h1 className="text-4xl md:text-7xl py-10 font-bold text-white  tracking-wider  items-start justify-start text-start ">
             <motion.span
               className=" block"
               initial={{ y: "50%", opacity: 0 }}
@@ -156,7 +216,7 @@ export default function HeroSection() {
           </h1>
 
           <p
-            className={`text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
+            className={`text-md md:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
           >
             <motion.span
               initial={{ y: "50%", opacity: 0 }}
@@ -196,39 +256,41 @@ export default function HeroSection() {
         </div>
         {/* promo */}
         <div className="flex gap-4  px-5 md:px-20 ">
-          {promos.map((promo, index) => (
-            <motion.div
-              whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
-              transition={{ type: "spring", stiffness: 300 }}
-              key={index}
-              className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
-            >
-              {/* Background Image */}
-              <div className="absolute inset-0">
-                <img
-                  src={promo.image}
-                  alt={promo.title}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/40" />
+          <div className="scroll-container">
+            <div className="scroll-content">
+              {/* Your existing promo cards */}
+              <div className="flex gap-4 px-5 md:px-20">
+                {promos.map((promo, index) => (
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    key={index}
+                    className="relative w-[calc(40vw-2rem)] min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
+                  >
+                    <div className="absolute inset-0">
+                      <img
+                        src={promo.image}
+                        alt={promo.title}
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="relative flex h-[240px] flex-col justify-between p-8">
+                      <h2 className="text-4xl font-bold leading-tight text-white whitespace-pre-line">
+                        {promo.title}
+                      </h2>
+                      <button
+                        className={` bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+                        onClick={lp.showJoin}
+                      >
+                        {promo.buttonText}
+                      </button>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
-
-              {/* Content */}
-              <div className="relative flex h-[240px] flex-col justify-between p-8">
-                <h2 className="text-4xl font-bold leading-tight text-white whitespace-pre-line">
-                  {promo.title}
-                </h2>
-                <button
-                  className=" w-fit mt-5 bg-primary hover:bg-hovercolr text-white rounded-xl px-8 py-3 text-lg font-inter tracking-wide font-medium transition-colors duration-200"
-                  onClick={lp.showJoin}
-                >
-                  {promo.buttonText}
-                </button>
-              </div>
-            </motion.div>
-          ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

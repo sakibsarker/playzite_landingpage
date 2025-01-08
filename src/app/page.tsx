@@ -18,28 +18,25 @@ const page = () => {
           <div className="h-[800px] bg-gradient-to-t from-blacktext  to-[#22762b]" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[200px] h-[1200px] semi-circle bg-primary blur-[130px] opacity-20" />
+          <div className="md:w-[800px] md:h-[800px] w-[200px] h-[800px] semi-circle bg-primary blur-[130px] opacity-20" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[200px] h-[1200px] semi-circle bg-primary blur-[130px] opacity-20" />
+          <div className="md:w-[800px] md:h-[800px] w-[200px] h-[800px] semi-circle bg-primary blur-[130px] opacity-20" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[200px] h-[1200px] semi-circle bg-primary blur-[130px] opacity-20" />
+          <div className="md:w-[800px] md:h-[800px] w-[200px] h-[800px] semi-circle bg-primary blur-[130px] opacity-20" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[1600px] " />
+          <div className="md:w-[800px] md:h-[800px] w-[150px] h-[1350px] " />
         </div>
         <div className="flex justify-center items-center">
           <div className="md:w-[800px] md:h-[400px] w-[150px] h-[1300px] bg-gradient-to-t from-primary  to-blacktext blur-[130px] opacity-40" />
         </div>
 
         <div className="absolute inset-0">
-          {/* <PromoSlider /> */}
           <CardComponents />
         </div>
       </div>
-
-      {/* <CommunityCard /> */}
     </>
   );
 };

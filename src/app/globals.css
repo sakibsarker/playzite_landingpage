@@ -8,10 +8,28 @@
   margin: 0;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+.scroll-container {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: hidden; /* Ensure no vertical scroll */
+  white-space: nowrap; /* Prevent wrapping of child elements */
+  display: flex; /* Horizontal alignment of child elements */
+  height: auto; /* Ensure the height of the container adjusts to the content */
 }
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+.scroll-content {
+  display: flex; /* Horizontal alignment of child elements */
+  animation: scroll 150s linear infinite; /* Smooth left-to-right scrolling */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container:hover .scroll-content {
+  animation-play-state: paused;
 }

@@ -65,14 +65,14 @@ export default function CardComponents() {
                   </h1>
                 </div>
 
-                <h2 className="text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
+                <h2 className="text-3xl md:text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
                   TU NUEVA
                   <br />
                   EXPERIENCIA
                 </h2>
 
                 <p
-                  className={`text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
+                  className={` text-xl md:text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
                 >
                   Somos tu comunidad, tu acceso al mejor entretenimiento y tu
                   aliado para momentos únicos. Valoramos tu confianza y
@@ -109,12 +109,12 @@ export default function CardComponents() {
                   </h1>
                 </div>
 
-                <h2 className="text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
+                <h2 className="text-3xl md:text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
                   DEPOSITA
                 </h2>
 
                 <p
-                  className={`text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
+                  className={`text-xl md:text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
                 >
                   Haz tus depósitos de forma segura y con total confianza.
                   Nuestro equipo de servicio al cliente está listo para
@@ -173,12 +173,12 @@ export default function CardComponents() {
                     retiros rápidos
                   </h1>
                 </div>
-                <h2 className="text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
+                <h2 className="text-3xl md:text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
                   RETIRa de forma fácil cuando quieras
                 </h2>
 
                 <p
-                  className={`text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
+                  className={`text-xl md:text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
                 >
                   Realiza tus retiros sin complicaciones, con el respaldo y
                   apoyo de nuestro servicio al cliente. Estamos aquí para
@@ -214,12 +214,12 @@ export default function CardComponents() {
                     seguridad
                   </h1>
                 </div>
-                <h2 className="text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
+                <h2 className="text-3xl md:text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
                   UNA EXPERIENCIA CONFIABLE Y SEGURA
                 </h2>
 
                 <p
-                  className={`text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
+                  className={`text-xl md:text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
                 >
                   En Playzite, estamos comprometidos con brindarte una
                   plataforma donde la seguridad y la confianza son nuestra
@@ -276,13 +276,13 @@ export default function CardComponents() {
                   </h1>
                 </div>
 
-                <h2 className="text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
+                <h2 className="text-3xl md:text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
                   BONO DEL 10% EXTRA <br />
                   CON TU DEPOSITO
                 </h2>
 
                 <p
-                  className={`text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
+                  className={`text-xl md:text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
                 >
                   Aprovecha un bono del 10% en tus depósitos, automáticamente
                   acreditado a tu cuenta. Por ejemplo, si depositas $10,000, tu
@@ -316,12 +316,12 @@ export default function CardComponents() {
                   NO TE LO PIERDAS
                 </h1>
               </div>
-              <h2 className="text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
+              <h2 className="text-3xl md:text-5xl py-10 font-bold tracking-wide text-white my-5 uppercase">
                 SÍGUENOS
               </h2>
 
               <p
-                className={`text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
+                className={`text-xl md:text-3xl pb-10 tracking-wide font-inter text-white ${jost.className}`}
               >
                 Conéctate con nosotros en las redes sociales y sé el primero en
                 enterarte de nuestras promociones exclusivas, bonos especiales y
