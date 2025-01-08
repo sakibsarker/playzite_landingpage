@@ -32,7 +32,7 @@ const page = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <div className=" h-[1300px] sm:h-[2000px] md:h-[500px] sm:max-md:h-[3000] md:max-lg:h-[500px] lg:max-xl:h-[1200px] xl:max-2xl:h-[100px]  bg-gradient-to-t from-primary  to-blacktext blur-[130px] opacity-40" />
+          <div className="w-[150px] h-[1300px] md:w-[800px] md:h-[500px]  sm:max-md:h-[3000] md:max-lg:h-[500px] lg:max-xl:h-[1200px] xl:max-2xl:h-[100px]  bg-gradient-to-t from-primary  to-blacktext blur-[130px] opacity-30" />
         </div>
         <div className="absolute inset-0">
           <CardComponents />
