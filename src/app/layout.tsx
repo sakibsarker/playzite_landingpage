@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Orbitron, Figtree, Jost } from "next/font/google";
 import "./globals.css";
-import CursorTrail from "@/components/CursorTrail";
 
 const inter = Inter({
   weight: ["300", "400", "700"],
@@ -31,10 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${figtree.className} `}>
-        <CursorTrail />
-        {children}
-      </body>
+      <body className={` ${figtree.className} `}>{children}</body>
     </html>
   );
 }

@@ -261,9 +261,7 @@ export default function HeroSection() {
               {/* Your existing promo cards */}
               <div className="flex gap-4 px-5 md:px-20">
                 {promos.map((promo, index) => (
-                  <motion.div
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                  <div
                     key={index}
                     className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px]  overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
                   >
@@ -286,7 +284,7 @@ export default function HeroSection() {
                         {promo.buttonText}
                       </button>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
