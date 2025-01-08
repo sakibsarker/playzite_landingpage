@@ -101,7 +101,7 @@ export default function HeroSection() {
 
   return (
     <div className="overflow-hidden  ">
-      <div className="relative flex flex-col items-start justify-start py-[10%]">
+      <div className="relative flex flex-col items-start justify-start">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[#21772B]">
           <Image
@@ -111,17 +111,19 @@ export default function HeroSection() {
             width={1800}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0  bg-gradient-to-b from-gray-600/5 to-primary  opacity-60 " />
+          <div className="absolute inset-0  bg-gradient-to-b from-gray-600/5 to-[#21772B] border-none" />
         </div>
 
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-start  px-5 md:px-32">
-          <div className="inline-flex px-4 py-2 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
-            <h1
-              className={`text-white tracking-wide font-medium uppercase ${inter.className}`}
-            >
-              RD$200 gratis
-            </h1>
+        <div className="relative z-10 text-start  px-5 md:px-32 py-40">
+          <div>
+            <div className="inline-flex px-4 py-2 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
+              <h1
+                className={`text-white tracking-wide font-medium uppercase ${inter.className}`}
+              >
+                RD$200 gratis
+              </h1>
+            </div>
           </div>
 
           <h1 className="text-7xl py-10 font-bold text-white  tracking-wider  items-start justify-start text-start ">
@@ -193,7 +195,7 @@ export default function HeroSection() {
           </button>
         </div>
         {/* promo */}
-        <div className="flex gap-4 overflow-x-auto scrollbar-hide px-5 md:px-20">
+        <div className="flex gap-4  px-5 md:px-20 ">
           {promos.map((promo, index) => (
             <motion.div
               whileHover={{ scale: 1.1, rotate: 5 }} // Hover effect
