@@ -171,7 +171,8 @@ export default function HeroSection() {
             width={1800}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0  bg-gradient-to-b from-gray-600/5 to-[#21772B] border-none" />
+          {/* <div className="absolute bottom-0 w-full h-[500px] bg-gradient-to-t from-[#34c748]/50 to-transparent" /> */}
+          <div className="absolute bottom-0 w-full h-[500px] bg-gradient-to-t from-[#34c748]/50 opacity-90 border-none" />
         </div>
 
         {/* Hero Text and Content */}
@@ -186,7 +187,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-7xl py-10 font-bold text-white  tracking-wider  items-start justify-start text-start ">
+          <h1 className="text-4xl md:text-6xl py-10 font-black text-white  items-start justify-start text-start ">
             <motion.span
               className=" block"
               initial={{ y: "50%", opacity: 0 }}
@@ -256,7 +257,7 @@ export default function HeroSection() {
           </button>
         </div>
         {/* promo */}
-        <div className="flex gap-4  px-5 md:px-20 ">
+        <div className="flex gap-4">
           <div className="scroll-container">
             <div className="scroll-content">
               {/* Your existing promo cards */}
@@ -275,7 +276,7 @@ export default function HeroSection() {
                       />
                     </div>
                     <div className="relative flex h-[240px] flex-col justify-between p-8">
-                      <h2 className="text-xl md:text-4xl font-bold leading-tight text-white whitespace-pre-line">
+                      <h2 className="text-xl md:text-4xl font-black leading-tight text-white whitespace-pre-line">
                         {promo.title}
                       </h2>
                       <button

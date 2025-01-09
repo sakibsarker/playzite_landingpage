@@ -12,7 +12,7 @@ const page = () => {
       {/* <PromoSlider /> */}
 
       <div className="w-full h-full bg-blacktext relative">
-        <div className="w-full h-[250px] md:h-[500px] md:max-lg:h-[1300px] lg:max-xl:h-[1500px] bg-gradient-to-t from-blacktext  to-[#21772B]" />
+        <div className="w-full h-[250px] md:h-[500px] md:max-lg:h-[1300px] lg:max-xl:h-[1500px] bg-gradient-to-t from-blacktext  to-[#34c748]/50" />
         {/* Single red glow on the top */}
 
         <div className="flex justify-center items-center">
