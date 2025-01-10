@@ -172,7 +172,7 @@ export default function HeroSection() {
             className="object-cover w-full h-full"
           />
 
-          <div className="absolute bottom-0 w-full h-[500px] bg-gradient-to-t from-[#34c748]/50 opacity-90 border-none" />
+          <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-[#34c748]/50 opacity-90 border-none" />
         </div>
 
         {/* Hero Text and Content */}
