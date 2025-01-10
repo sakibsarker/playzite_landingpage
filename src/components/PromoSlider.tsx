@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLinepros } from "@/hooks/useLinepros";
 import { motion } from "framer-motion";
+import { Jost, Inter } from "next/font/google";
+
+const jost = Jost({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const PromoSlider: React.FC = () => {
   const { trackHeight, actions: lp } = useLinepros();
@@ -137,11 +141,11 @@ const PromoSlider: React.FC = () => {
               />
             </div>
             <div className="relative flex h-[240px] flex-col justify-between p-8">
-              <h2 className="text-xl md:text-4xl font-bold leading-tight text-white whitespace-pre-line">
+              <h2 className="text-xl md:text-4xl font-black leading-tight text-white whitespace-pre-line">
                 {promo.title}
               </h2>
               <button
-                className="bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-5 text-xl tracking-wide font-medium transition-colors duration-200"
+                className={` bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
                 onClick={lp.showJoin}
               >
                 {promo.buttonText}
@@ -154,7 +158,7 @@ const PromoSlider: React.FC = () => {
       {/* Left Arrow */}
       <button
         onClick={scrollLeft}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-lg hover:bg-black/70 transition"
       >
         &larr;
       </button>
@@ -162,7 +166,7 @@ const PromoSlider: React.FC = () => {
       {/* Right Arrow */}
       <button
         onClick={scrollRight}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-lg hover:bg-black/70 transition"
       >
         &rarr;
       </button>

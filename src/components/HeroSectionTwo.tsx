@@ -7,7 +7,7 @@ import { Jost, Inter } from "next/font/google";
 
 const jost = Jost({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
-export default function HeroSection() {
+export default function HeroSectionTwo() {
   const { trackHeight, actions: lp } = useLinepros();
   const [scrollDirection, setScrollDirection] = useState("up");
   const navImages = [
@@ -163,16 +163,14 @@ export default function HeroSection() {
     <div className="overflow-hidden  ">
       <div className="relative flex flex-col items-start justify-start pb-14">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[#1A6324]">
+        <div className="absolute inset-0 h-screen">
           <Image
             src="/images/bannerimg.png"
             alt="Crypto Background"
             height={1000}
             width={1800}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-screen"
           />
-
-          <div className="absolute bottom-0 w-full h-[500px] bg-gradient-to-t from-[#34c748]/50 opacity-90 border-none" />
         </div>
 
         {/* Hero Text and Content */}
@@ -256,42 +254,7 @@ export default function HeroSection() {
             Crear Cuenta
           </button>
         </div>
-
-        <div className="flex gap-4">
-          <div className="scroll-container">
-            <div className="scroll-content">
-              {/* Your existing promo cards */}
-              <div className="flex gap-4 px-5 md:px-20">
-                {promos.map((promo, index) => (
-                  <div
-                    key={index}
-                    className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px]  overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
-                  >
-                    <div className="absolute inset-0">
-                      <img
-                        src={promo.image}
-                        alt={promo.title}
-                        className="h-full w-full object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="relative flex h-[240px] flex-col justify-between p-8">
-                      <h2 className="text-xl md:text-4xl font-black leading-tight text-white whitespace-pre-line">
-                        {promo.title}
-                      </h2>
-                      <button
-                        className={` bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
-                        onClick={lp.showJoin}
-                      >
-                        {promo.buttonText}
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* promo */}
       </div>
     </div>
   );
