@@ -256,11 +256,11 @@ export default function HeroSection() {
             Crear Cuenta
           </button>
         </div>
-
+        {/*
         <div className="flex gap-4">
           <div className="scroll-container">
             <div className="scroll-content">
-              {/* Your existing promo cards */}
+              
               <div className="flex gap-4 px-5 md:px-20">
                 {promos.map((promo, index) => (
                   <div
@@ -292,6 +292,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+        */}
       </div>
     </div>
   );
