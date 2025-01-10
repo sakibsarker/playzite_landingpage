@@ -4,7 +4,7 @@ import CardComponents from "@/components/CardComponents";
 
 import HeroSection from "@/components/HeroSection";
 import PromoSlider from "@/components/PromoSlider";
-
+// to-[#175820]
 const page = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const page = () => {
       {/* <PromoSlider /> */}
 
       <div className="w-full h-full bg-blacktext relative">
-        <div className="w-full h-[250px] md:h-[500px] md:max-lg:h-[400px] lg:max-xl:h-[500px] bg-gradient-to-t from-blacktext  to-[#175820]" />
+        <div className="w-full h-[250px] md:h-[500px] md:max-lg:h-[400px] lg:max-xl:h-[500px] bg-gradient-to-t from-blacktext to-primary/45  " />
         {/* Single red glow on the top */}
 
         <div className="flex justify-center items-center">
