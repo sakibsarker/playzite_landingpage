@@ -161,7 +161,7 @@ export default function HeroSection() {
 
   return (
     <div className="overflow-hidden  ">
-      <div className="relative flex flex-col items-start justify-start pb-14 md:pb-14 md:max-lg:pb-14 lg:max-xl:pb-14">
+      <div className="relative flex flex-col items-start justify-start pb-5 md:pb-14 md:max-lg:pb-14 lg:max-xl:pb-14">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[#1A6324]">
           <Image

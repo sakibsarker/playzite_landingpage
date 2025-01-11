@@ -109,7 +109,7 @@ const PromoSlider: React.FC = () => {
         {extendedPromos.map((promo, index) => (
           <motion.div
             key={index}
-            className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px] overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
+            className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px] md:max-lg:w-[calc(40vw-2rem)] lg:max-xl:w-[calc(40vw-2rem)] md:max-lg:min-w-[400px] lg:max-xl:min-w-[400px]  overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
           >
             <div className="absolute inset-0">
               <img
