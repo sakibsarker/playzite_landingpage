@@ -96,14 +96,14 @@ const PromoSlider: React.FC = () => {
 
   return (
     <div
-      className="relative"
+      className="relative z-40"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {/* Scroll Container */}
       <div
         ref={scrollContainerRef}
-        className="scroll-container overflow-x-scroll flex gap-4 px-5 md:px-20"
+        className="scroll-container overflow-x-scroll flex gap-4 "
       >
         {/* Promo Cards */}
         {extendedPromos.map((promo, index) => (

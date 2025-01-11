@@ -77,93 +77,16 @@ export default function HeroSection() {
     };
   }, []);
 
-  const promos = [
-    {
-      title: "GANA RD$200\nTOTALMENTE GRATIS",
-      buttonText: "Crear Cuenta",
-      image: "/images/promo1.png",
-    },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
-    {
-      title: "GANA RD$200\nTOTALMENTE GRATIS",
-      buttonText: "Crear Cuenta",
-      image: "/images/promo1.png",
-    },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
-    {
-      title: "GANA RD$200\nTOTALMENTE GRATIS",
-      buttonText: "Crear Cuenta",
-      image: "/images/promo1.png",
-    },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
-    {
-      title: "GANA RD$200\nTOTALMENTE GRATIS",
-      buttonText: "Crear Cuenta",
-      image: "/images/promo1.png",
-    },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
-    {
-      title: "GANA RD$200\nTOTALMENTE GRATIS",
-      buttonText: "Crear Cuenta",
-      image: "/images/promo1.png",
-    },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
-  ];
-
   useEffect(() => {
     trackHeight();
   }, []);
 
   return (
-    <div className="overflow-hidden  ">
-      <div className="relative flex flex-col items-start justify-start pb-5 md:pb-14 md:max-lg:pb-14 lg:max-xl:pb-14">
+    <div className="overflow-hidden relative  ">
+      <div className="relative flex flex-col items-start justify-start ">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[#1A6324]">
+
+        <div className="absolute inset-0 ">
           <Image
             src="/images/bannerimg.png"
             alt="Crypto Background"
@@ -171,8 +94,6 @@ export default function HeroSection() {
             width={1800}
             className="object-cover w-full h-full"
           />
-
-          <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-[#34c748]/50 opacity-90 border-none" />
         </div>
 
         {/* Hero Text and Content */}
@@ -256,43 +177,6 @@ export default function HeroSection() {
             Crear Cuenta
           </button>
         </div>
-        {/*
-        <div className="flex gap-4">
-          <div className="scroll-container">
-            <div className="scroll-content">
-              
-              <div className="flex gap-4 px-5 md:px-20">
-                {promos.map((promo, index) => (
-                  <div
-                    key={index}
-                    className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px]  overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
-                  >
-                    <div className="absolute inset-0">
-                      <img
-                        src={promo.image}
-                        alt={promo.title}
-                        className="h-full w-full object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="relative flex h-[240px] flex-col justify-between p-8">
-                      <h2 className="text-xl md:text-4xl font-black leading-tight text-white whitespace-pre-line">
-                        {promo.title}
-                      </h2>
-                      <button
-                        className={` bg-secondary hover:bg-primary w-fit mt-5 text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
-                        onClick={lp.showJoin}
-                      >
-                        {promo.buttonText}
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        */}
       </div>
     </div>
   );

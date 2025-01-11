@@ -28,11 +28,11 @@ export default function CardComponents() {
     { icon: FaTelegramPlane, href: "#", label: "Telegram" },
   ];
   return (
-    <div className="px-5 p-6 md:p-12">
+    <div className="px-5 p-6 md:p-12 ">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Withdraw Section */}
         <motion.div
-          className="relative bg-white/[3%] border-2 border-white/10 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"
+          className="relative z-40 bg-white/[3%] border-2 border-white/10 rounded-3xl p-8 md:p-12 overflow-hidden backdrop-blur-sm"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
