@@ -25,14 +25,14 @@ const page = () => {
           <div className="h-[400px] bg-gradient-to-t from-blacktext  to-[#3a5429]" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:min-h-screen w-[200px] h-[1800px] sm:h-[900px] md:max-lg:h-[800px] lg:max-xl:h-[100px] semi-circle bg-[#3a5429] blur-[130px] opacity-20" />
+          <div className="md:w-[800px] md:min-h-screen w-[200px] h-[1800px] sm:h-[900px] md:max-lg:h-[800px] lg:max-xl:h-[100px] semi-circle bg-[#3a5429] blur-[130px] opacity-50" />
         </div>
         <div className="flex justify-center items-center">
-          <div className="md:w-[800px] md:min-h-screen w-[200px] h-[1800px] sm:h-[700px] md:max-lg:h-[800px] lg:max-xl:h-[400px] semi-circle bg-[#3a5429] blur-[130px] opacity-20" />
+          <div className="md:w-[800px] md:min-h-screen w-[200px] h-[1800px] sm:h-[700px] md:max-lg:h-[800px] lg:max-xl:h-[400px] semi-circle bg-[#3a5429] blur-[130px] opacity-50" />
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="w-[150px] h-[900px] md:h-[1100px] sm:h-[1300px] md:w-[500px]  md:max-lg:h-[1100px] lg:max-xl:h-[300px] xl:max-2xl:h-[100px]  bg-gradient-to-t from-[#3a5429]  to-blacktext blur-[130px] opacity-50" />
+          <div className="w-[150px] h-[900px] md:h-[1100px] sm:h-[1300px] md:w-[500px]  md:max-lg:h-[1100px] lg:max-xl:h-[300px] xl:max-2xl:h-[100px]  bg-gradient-to-t from-[#3a5429]  to-blacktext blur-[130px] opacity-70" />
         </div>
 
         <div className="absolute inset-0">
