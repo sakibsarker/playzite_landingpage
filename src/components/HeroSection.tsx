@@ -161,7 +161,7 @@ export default function HeroSection() {
 
   return (
     <div className="overflow-hidden  ">
-      <div className="relative flex flex-col items-start justify-start pb-14">
+      <div className="relative flex flex-col items-start justify-start pb-14 md:pb-14 md:max-lg:pb-14 lg:max-xl:pb-14">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[#1A6324]">
           <Image
@@ -176,7 +176,7 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Text and Content */}
-        <div className="relative z-10 text-start  px-5 md:px-32 py-10 md:py-40">
+        <div className="relative z-10 text-start  px-5 py-10 md:px-32  md:py-40 md:max-lg:py-10 lg:max-xl:py-10 md:max-lg:px-10 lg:max-xl:px-10">
           <div>
             <div className="inline-flex px-4 py-2 items-center justify-center w-auto rounded-xl transition-all duration-200 shadow-[inset_0_0_6px_rgba(255,255,255,0.5)] border-2 border-primary border-r-primary border-b-primary">
               <h1
@@ -187,7 +187,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl py-10 font-black text-white  items-start justify-start text-start ">
+          <h1 className="text-4xl md:text-6xl md:max-lg:text-6xl lg:max-xl:text-6xl py-10 font-black text-white  items-start justify-start text-start ">
             <motion.span
               className=" block"
               initial={{ y: "50%", opacity: 0 }}
@@ -218,7 +218,7 @@ export default function HeroSection() {
           </h1>
 
           <p
-            className={`text-md md:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
+            className={`text-md md:text-3xl md:max-lg:text-3xl lg:max-xl:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
           >
             <motion.span
               initial={{ y: "50%", opacity: 0 }}
