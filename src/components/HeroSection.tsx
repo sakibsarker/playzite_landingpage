@@ -170,7 +170,7 @@ export default function HeroSection() {
             </motion.span>
           </p>
           <button
-            className={` bg-secondary hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
+            className={` bg-secondary z-20  hover:bg-primary text-white rounded-2xl px-5 py-4 text-xl tracking-wide font-medium transition-colors duration-200 ${inter.className}`}
             onClick={lp.showJoin}
           >
             {" "}
