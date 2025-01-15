@@ -85,7 +85,7 @@ const PromoSlider: React.FC = () => {
     if (!isPaused) {
       const interval = setInterval(() => {
         scrollRight();
-      }, 1000); // Change slide every 3 seconds
+      }, 3000);
 
       return () => clearInterval(interval);
     }
