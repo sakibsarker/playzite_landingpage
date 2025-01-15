@@ -108,7 +108,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl md:max-lg:text-6xl lg:max-xl:text-6xl py-10 font-black text-white  items-start justify-start text-start ">
+          <h1 className="text-4xl z-20 md:text-6xl md:max-lg:text-6xl lg:max-xl:text-6xl py-10 font-black text-white  items-start justify-start text-start ">
             <motion.span
               className=" block"
               initial={{ y: "50%", opacity: 0 }}
@@ -139,7 +139,7 @@ export default function HeroSection() {
           </h1>
 
           <p
-            className={`text-sm md:text-3xl md:max-lg:text-2xl lg:max-xl:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
+            className={`text-sm z-20 md:text-3xl md:max-lg:text-2xl lg:max-xl:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
           >
             <motion.span
               initial={{ y: "50%", opacity: 0 }}

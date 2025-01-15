@@ -10,8 +10,8 @@ const page = () => {
     <>
       <div className="w-full h-full bg-blacktext relative">
         <div
-          className="absolute mt-[45vh] md:mt-[95vh] md:max-lg:mt-[65vh] lg:max-xl:mt-[50vh] top-0 left-0 w-full h-[650px] md:h-[500px] md:max-lg:h-[500px] lg:max-xl:h-[500px]
-             bg-[#3a5429]  to-transparent z-10  blur-[150px]"
+          className="absolute mt-[50vh] md:mt-[95vh] md:max-lg:mt-[65vh] lg:max-xl:mt-[50vh] top-0 left-0 w-full h-[650px] md:h-[500px] md:max-lg:h-[500px] lg:max-xl:h-[500px]
+             bg-[#3a5429] to-transparent z-10  blur-[150px]"
         />
 
         <div className="w-full h-[600px] md:h-[800px] md:max-lg:h-[500px] lg:max-xl:h-[500px]  bg-blacktext      " />
