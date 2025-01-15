@@ -30,7 +30,7 @@ const page = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="w-full h-[900px] md:h-[1100px] sm:h-[1300px] md:w-[500px]  md:max-lg:h-[1100px] lg:max-xl:h-[700px] xl:max-2xl:h-[1100px]  bg-gradient-to-t from-[#3a5429]  to-blacktext blur-[130px] opacity-70" />
+          <div className="w-full h-[700px] md:h-[1100px] sm:h-[1300px] md:w-[500px]  md:max-lg:h-[1100px] lg:max-xl:h-[700px] xl:max-2xl:h-[1100px]  bg-gradient-to-t from-[#3a5429]  to-blacktext blur-[130px] opacity-70" />
         </div>
 
         <div className="absolute inset-0">
