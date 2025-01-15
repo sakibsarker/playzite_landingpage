@@ -139,7 +139,7 @@ export default function HeroSection() {
           </h1>
 
           <p
-            className={`text-[15px] md:text-3xl md:max-lg:text-2xl lg:max-xl:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
+            className={`text-sm md:text-3xl md:max-lg:text-2xl lg:max-xl:text-3xl pb-10 tracking-wide text-start items-start justify-start text-white ${jost.className}`}
           >
             <motion.span
               initial={{ y: "50%", opacity: 0 }}
