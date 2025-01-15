@@ -32,6 +32,8 @@ const PromoSlider: React.FC = () => {
       buttonText: "Crear Cuenta",
       image: "/images/promo1.png",
     },
+
+    // Add more promos as needed
   ];
   const extendedPromos = [...promos, ...promos];
   useEffect(() => {
@@ -40,11 +42,8 @@ const PromoSlider: React.FC = () => {
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
-      const cardWidth =
-        (scrollContainerRef.current.firstChild as HTMLElement)?.offsetWidth ||
-        0;
       scrollContainerRef.current.scrollBy({
-        left: -cardWidth,
+        left: -600, // Adjust the scroll amount as needed
         behavior: "smooth",
       });
     }
@@ -52,16 +51,16 @@ const PromoSlider: React.FC = () => {
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth } = scrollContainerRef.current;
-      const cardWidth =
-        (scrollContainerRef.current.firstChild as HTMLElement)?.offsetWidth ||
-        0;
+      const { scrollLeft, scrollWidth, clientWidth } =
+        scrollContainerRef.current;
 
+      // Check if the slider has reached the midpoint
       if (scrollLeft >= scrollWidth / 2) {
+        // Reset scroll position to the start of the original array
         scrollContainerRef.current.scrollTo({ left: 0 });
       } else {
         scrollContainerRef.current.scrollBy({
-          left: cardWidth,
+          left: 600, // Adjust the scroll amount
           behavior: "smooth",
         });
       }
