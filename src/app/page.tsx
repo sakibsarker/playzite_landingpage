@@ -4,7 +4,7 @@ import CardComponents from "@/components/CardComponents";
 
 import HeroSection from "@/components/HeroSection";
 import PromoSlider from "@/components/PromoSlider";
-// to-[#175820]
+// bg-[#3a5429]
 const page = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const page = () => {
 
       <div className="w-full h-full bg-blacktext relative">
         <div
-          className="absolute mt-[55vh] md:mt-[80vh] md:max-lg:mt-[55vh] lg:max-xl:mt-[45vh] top-0 left-0 w-full h-[650px] md:max-h-full md:max-lg:h-[500px] lg:max-xl:h-[500px]
+          className="absolute mt-[65vh] md:mt-[95vh] md:max-lg:mt-[65vh] lg:max-xl:mt-[50vh] top-0 left-0 w-full h-[650px] md:h-[500px] md:max-lg:h-[500px] lg:max-xl:h-[500px]
              bg-[#3a5429]  to-transparent z-20 pointer-events-none blur-[100px]"
         />
 
