@@ -8,12 +8,15 @@
   margin: 0;
 }
 
+
 .scroll-container {
   overflow-x: hidden; /* Hide horizontal overflow */
   overflow-y: hidden; /* Ensure no vertical scroll */
-  white-space: nowrap; /* Prevent wrapping of child elements */
-  display: flex; /* Horizontal alignment of child elements */
-  height: auto; /* Ensure the height of the container adjusts to the content */
+
+  scroll-snap-type: x mandatory;
+}
+.promo-card {
+  scroll-snap-align: start;
 }
 
 .scroll-content {

@@ -32,33 +32,19 @@ const PromoSlider: React.FC = () => {
       buttonText: "Crear Cuenta",
       image: "/images/promo1.png",
     },
-    {
-      title: "BONO DEL 10% EXTRA\nCON TU DEPOSITO",
-      buttonText: "Deposita Ahora",
-      image: "/images/promo2.png",
-    },
-    {
-      title: "RETIRA TU DINERO\nCUANDO QUIERAS",
-      buttonText: "Saber Más",
-      image: "/images/promo3.png",
-    },
-    // Add more promos as needed
   ];
-  const extendedPromos = [
-    ...promos,
-    ...promos,
-    ...promos,
-    ...promos,
-    ...promos,
-  ];
+  const extendedPromos = [...promos, ...promos];
   useEffect(() => {
     trackHeight();
   }, []);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
+      const cardWidth =
+        (scrollContainerRef.current.firstChild as HTMLElement)?.offsetWidth ||
+        0;
       scrollContainerRef.current.scrollBy({
-        left: -300, // Adjust the scroll amount as needed
+        left: -cardWidth,
         behavior: "smooth",
       });
     }
@@ -66,16 +52,16 @@ const PromoSlider: React.FC = () => {
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } =
-        scrollContainerRef.current;
+      const { scrollLeft, scrollWidth } = scrollContainerRef.current;
+      const cardWidth =
+        (scrollContainerRef.current.firstChild as HTMLElement)?.offsetWidth ||
+        0;
 
-      // Check if the slider has reached the midpoint
       if (scrollLeft >= scrollWidth / 2) {
-        // Reset scroll position to the start of the original array
         scrollContainerRef.current.scrollTo({ left: 0 });
       } else {
         scrollContainerRef.current.scrollBy({
-          left: 600, // Adjust the scroll amount
+          left: cardWidth,
           behavior: "smooth",
         });
       }
@@ -109,7 +95,7 @@ const PromoSlider: React.FC = () => {
         {extendedPromos.map((promo, index) => (
           <motion.div
             key={index}
-            className="relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px] md:max-lg:w-[calc(40vw-2rem)] lg:max-xl:w-[calc(40vw-2rem)] md:max-lg:min-w-[400px] lg:max-xl:min-w-[400px]  overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
+            className="promo-card relative w-[calc(40vw-2rem)] min-w-[400px] md:w-[calc(40vw-2rem)] md:min-w-[600px] md:max-lg:w-[calc(40vw-2rem)] lg:max-xl:w-[calc(40vw-2rem)] md:max-lg:min-w-[400px] lg:max-xl:min-w-[400px]  overflow-hidden rounded-3xl border-2 border-gray-600/80 backdrop-blur-md"
           >
             <div className="absolute inset-0">
               <img
